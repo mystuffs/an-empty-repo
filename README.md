@@ -37,6 +37,7 @@ tool_secondsleep(int sleep); // Wait for seconds
 tool_buffer_size(int x, int y); // Set cmd buffer size
 
 tool_flush_console(); // Flush the whole cmd
+
 End of winapi.c
 
 So you can see some functions here in it you will find more, here is not posible to give every functions, to know just visit the source.
