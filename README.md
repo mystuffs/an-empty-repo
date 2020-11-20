@@ -14,20 +14,29 @@ There are some basic functions and some maths there, it's not very big library i
 
 The Functions which are stay on it:
 
-In winapi.c
+<p>In winapi.c</p>
+<p></p>
+<p>tool_gotoxy(int x and int y); // Change cursor position on cmd by X and Y value.</p>
+<p></p>
+<p>tool_cursor_state(int state); // Change cursor state (0 = ShowCursor) else (1 = HideCursor)</p>
+<p></p>
+<p>tool_tool_clear_screen();// Clear the whole console screen like CLS command. (** In old version I used Dos9 Clear function but in this version I use my own function)</p>
+<p></p>
+<p>tool_change_color(char color); // Change console color (** Only arguments in char, if you try to give integers you will found warning in compilation)</p>
+<p></p>
+<p>tool_default_color(); // Same as color 07 or color 7
 
-tool_gotoxy(int x and int y); // Change cursor position on cmd by X and Y value.
-tool_cursor_state(int state); // Change cursor state (0 = ShowCursor) else (1 = HideCursor)
-tool_tool_clear_screen();// Clear the whole console screen like CLS command. (** In old version I used Dos9 Clear function but in this version I use my own function)
-tool_change_color(char color); // Change console color (** Only arguments in char, if you try to give integers you will found warning in compilation)
-tool_default_color(); // Same as color 07 or color 7
 tool_cursor_size(int size); // Change cursor size of blinking cursor
-tool_get_time(); // To get system local time (** If your local time is wrong then you will find the wrong time)
-tool_millisleep(int sleep); // Wait for milliseconds
-tool_secondsleep(int sleep); // Wait for seconds
-tool_buffer_size(int x, int y); // Set cmd buffer size
-tool_flush_console(); // Flush the whole cmd
 
+tool_get_time(); // To get system local time (** If your local time is wrong then you will find the wrong time)
+
+tool_millisleep(int sleep); // Wait for milliseconds
+
+tool_secondsleep(int sleep); // Wait for seconds
+
+tool_buffer_size(int x, int y); // Set cmd buffer size
+
+tool_flush_console(); // Flush the whole cmd
 End of winapi.c
 
 So you can see some functions here in it you will find more, here is not posible to give every functions, to know just visit the source.
